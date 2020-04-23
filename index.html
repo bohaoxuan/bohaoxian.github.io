@@ -1,1 +1,603 @@
-hello itcast.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>天气之子</title>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Bad+Script|Gruppo|Kumar+One+Outline|League+Script|Londrina+Outline|Monoton|Sriracha|Yellowtail&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789?+'>
+ 	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<body>
+
+	<script>
+		window.alert("本网站为原创，制作网页所需要的资源全部来自度娘（‐＾▽＾‐）。当然度娘有时候也不准╮╯▽╰╭，不要怪罪她≧ω≦。请浏览者点击确定开始浏览~~~");
+	</script>
+
+	<!--背景-->
+	<div class="row">
+		<div class="col-md-12">
+			<video class="video" autoplay="autoplay" loop="loop" muted="muted">
+				<source src="video\天气之子.mp4" type="video/mp4">
+			</video>
+		</div>
+	</div>
+		
+		<div class="beijing"></div>
+	<!--导航栏-->
+	<a name="a123"></a>
+		<div class="nav">
+			<ul>
+				<div id="times"></div>
+				<script type="text/javascript">
+					var times=document.getElementById("times")
+					function sz(){
+						t=setInterval(function(){
+						//获取时间对象
+						var dd=new Date;
+						//获取年月日，时分秒
+						var y=dd.getFullYear();
+						var m=dd.getMonth()+1;
+						var d=dd.getDate();
+						var h=dd.getHours();
+						var i=dd.getMinutes();
+						var s=dd.getSeconds();
+						var wkday = dd.getDay();
+						times.innerHTML=y+"年"+m+"月"+d+"日"+"   "+h+":"+i+":"+s+" "+"星期"+"日一二三四五六".charAt(wkday);
+						},1000)
+				}
+					sz()
+				</script>
+
+				<li><a class="a" href="#a123">首页</a></li>
+				<li style="position: relative;border-bottom-right-radius: 0;border-bottom-left-radius: 0;">
+					<a style="border-bottom-right-radius: 0;border-bottom-left-radius: 0;" href="#b123">精彩图集</a>
+					<ul class="tit tit-1">
+						<li class="list">
+							<a  href="https://baike.baidu.com/pic/天气之子/23203347/25863357/9f2f070828381f30163db4d8a6014c086e06f09f?fr=newalbum#aid=25863357&pic=9f2f070828381f30163db4d8a6014c086e06f09f">complete</a>
+						</li>
+						<li class="list">
+							<a href="https://baike.baidu.com/pic/天气之子/23203347/0/9d82d158ccbf6c816aeeab7eb23eb13532fa404f?fr=newalbum#aid=0&pic=9d82d158ccbf6c816aeeab7eb23eb13532fa404f">词条图片</a>
+						</li>
+						<li class="list hou">
+							<a href="https://baike.baidu.com/pic/天气之子/23203347/1/8644ebf81a4c510f2531957b6f59252dd52aa5de?fr=newalbum#aid=1&pic=8644ebf81a4c510f2531957b6f59252dd52aa5de">概述图册</a>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#c123">基本信息</a></li>
+				<li><a href="#d123">剧情简介</a></li>
+				<li style="position: relative;border-bottom-right-radius: 0;border-bottom-left-radius: 0;">
+					<a style="border-bottom-right-radius: 0;border-bottom-left-radius: 0;" href="#d123">角色介绍</a>
+					<ul class="tit tit-2">
+						<li class="list"><a href="#d123">森岛帆高</a></li>
+						<li class="list"><a href="#d123">天野阳菜</a></li>
+						<li class="list"><a href="#d123">天野凪</a></li>
+						<li class="list"><a href="#d123">须贺圭介</a></li>
+						<li class="list"><a href="#d123">须贺夏美</a></li>
+						<li class="list hou"><a href="#d123">立花富美</a></li>
+					</ul>
+				</li>
+				<li style="position: relative;border-bottom-right-radius: 0;border-bottom-left-radius: 0;">
+					<a style="border-bottom-right-radius: 0;border-bottom-left-radius: 0;" href="#e123">动画制作</a>
+					<ul class="tit tit-3">
+						<li class="list"><a href="#e123">动画制作</a></li>
+						<li class="list hou"><a href="#e123">角色配音</a></li>
+					</ul>
+				</li>
+				<li style="position: relative;border-bottom-right-radius: 0;border-bottom-left-radius: 0;">
+					<a style="border-bottom-right-radius: 0;border-bottom-left-radius: 0;" href="#f123">关联作品</a>
+					<ul class="tit tit-4">
+						<li class="list"><a href="#f123">小说</a></li>
+						<li class="list hou"><a href="#f123">动漫</a></li>
+					</ul>
+				</li>
+				<li><a href="#g123">新海诚</a></li>
+				<li>
+					<form style="height: 50px;position: relative;left: 40px;">
+						<input class="input" type="text" name="wenben" value="search...">
+						<input class="button" type="button" name="anniu" value="搜索">
+					</form>
+				</li>
+			</ul>
+		</div>
+
+
+	<!--左侧导航-->
+	    <div class="zuo">
+		    <div class="list-1">
+				<a class="list-3" href="#a123">首页</a>
+			</div>
+			<div class="list-1">
+			    <a class="list-2" href="#b123">精彩图集</a>
+		    </div>
+            <div class="list-1">
+			     <a class="list-2" href="#c123">基本信息</a>
+		    </div>
+		    <div class="list-1">
+			     <a class="list-2" href="#d123">剧情简介</a>
+		    </div>
+		    <div class="list-1">
+			     <a class="list-2" href="#d123">角色介绍</a>
+		    </div>
+		    <div class="list-1">
+			     <a class="list-2" href="#e123">动画制作</a>
+		    </div>
+		    <div class="list-1">
+			     <a class="list-2" href="#f123">关联作品</a>
+		    </div>
+		    <div style="border-bottom: none;" class="list-1">
+			     <a class="list-4" href="#g123">新海诚</a>
+		    </div>
+		</div>
+
+	<!--内容-->
+	<!--第一页-->
+	<div class="row">
+		<div class="col-md-12">
+			<div style="width: 1002px;height: 765px;margin:0 auto;">
+		    <div class="con">
+		    	<div style="font-size: 70px;margin-bottom: 0;">天气之子</div>
+		    	<div style="font-size: 20px;margin-top: 0;">Weatering with you</div>
+		    	<div style="font-size: 30px;">11/10上映</div>
+		    </div>
+
+			<!--轮播图-->
+			<center>
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+				  </ol>
+				
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				    <div class="item active">
+				      <img src="photo\photo1.jpg" alt="好不容易找到图片怎么就不显示了呢？？？（T-T）">
+				      <div class="carousel-caption">
+				        
+				      </div>
+				    </div>
+				    <div class="item">
+				      <img src="photo\photo2.jpg" alt="好不容易找到图片怎么就不显示了呢？？？（T-T）">
+				      <div class="carousel-caption">
+				        
+				      </div>
+				    </div>
+				    <div class="item">
+				      <img src="photo\photo3.jpg" alt="好不容易找到图片怎么就不显示了呢？？？（T-T）">
+				      <div class="carousel-caption">
+				        
+				      </div>
+				    </div>
+				    <div class="item">
+				      <img src="photo\photo4.jpg" alt="好不容易找到图片怎么就不显示了呢？？？（T-T）">
+				      <div class="carousel-caption">
+				        
+				      </div>
+				    </div>
+				    <div class="item">
+				      <img src="photo\photo5.jpg" alt="好不容易找到图片怎么就不显示了呢？？？（T-T）">
+				      <div class="carousel-caption">
+				        
+				      </div>
+				    </div>
+				    
+				  </div>
+				
+				  <!-- Controls -->
+  					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+  					  <span style="font-family: Glyphicons Halflings" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  					  <span class="sr-only">Previous</span>
+  					</a>
+  					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+  					  <span style="font-family: Glyphicons Halflings" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+  					  <span class="sr-only">Next</span>
+  					</a>
+				</div>
+			</center>
+
+	        <!--天气之子简介-->
+	        <div class="abc">
+				<center>
+					<div id="demo1" type="button" onclick="document.getElementById('demo2').style.display='block'">
+						这一块咋啥都没有？？q'(^_^)'p 点我试试！=^.^=
+					</div>
+				</center>
+				<div id="demo2">
+					<h1 style="margin-top: 10px;">天气之子</h1>
+					<div>
+						《天气之子》是由日本动画监督新海诚执导的动画电影作品，于2019年7月19日在日本上映，并于2019年11月1日在中国大陆上映。这是新海诚继《你的名字。》后时隔三年的又一部动画电影，也是他的第七部及进入令和时代后的首部动画电影，更获得代表日本角逐第92届奥斯卡最佳国际影片奖的资格。该片讲述的是在气候调节失控的时代，被命运捉弄的少年和少女选择各自的生活方式的故事。
+					</div>
+	        	</div>
+	        </div>
+
+	        <hr style="margin: 9px 0;width: 750px;">
+
+	        <div>
+	        	<div style="float: left;font-size: 25px;color: #fff;text-shadow: 1px 1px 1px #000;margin-right: 10px;">
+	        		秒<br>懂<br>百<br>科
+	        	</div>
+	        	<div style="float: left;font-size: 20px;color: #000;margin-right: 20px;text-shadow: 1px 1px 1px #fff;">
+	        		世<br>界<br>如<br>此<br>简<br>单
+	        	</div>
+	        	<div style="float: left;">
+	        		<video style="width: 300px;height: 200px;" controls="controls">
+	        		    <source src="video\video1.mp4" type="video/mp4">
+	        	    </video>
+	        	</div>
+	        	<div style="float: left;margin-left: 80px;">	
+	        		<video style="width: 300px;height: 200px;" controls="controls">
+	        		    <source src="video\video2.mp4" type="video/mp4">
+	        	    </video>
+	        	</div>
+	        </div>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<!--第二页 照片墙 -->
+	<a name="b123"></a>
+	<div class="row">
+		<div class="col-md-12">
+			<div style="width: 1002px;height: 765px;margin:0 auto;">
+				<div class="mn">
+					<center><div style="font-size:50px;color: #fff;text-shadow: 1px 1px 1px #000;">精彩图集</div></center>
+					<div class="nn">
+						<ul>
+							<li>
+								<a href="https://baike.baidu.com/pic/天气之子/23203347/25863357/9f2f070828381f30163db4d8a6014c086e06f09f?fr=newalbum#aid=25863357&pic=9f2f070828381f30163db4d8a6014c086e06f09f">complete version</a>
+							</li>
+							<li>
+								<a href="https://baike.baidu.com/pic/天气之子/23203347/0/9d82d158ccbf6c816aeeab7eb23eb13532fa404f?fr=newalbum#aid=0&pic=9d82d158ccbf6c816aeeab7eb23eb13532fa404f">词条图片</a>
+							</li>
+							<li>
+								<a href="https://baike.baidu.com/pic/天气之子/23203347/1/8644ebf81a4c510f2531957b6f59252dd52aa5de?fr=newalbum#aid=1&pic=8644ebf81a4c510f2531957b6f59252dd52aa5de">概述图册</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+		        <div class="mm" align=center>
+		           <img src=photo\photo6.jpg / width=250px>
+		           <img src=photo\photo7.jpg / width=270px>
+		           <img src=photo\photo8.jpg / width=260px>
+		           <img src=photo\photo9.jpg / width=290px>
+		           <img src=photo\photo10.jpg / width=290px>
+		           <img src=photo\photo11.jpg / width=250px>
+		           <img src=photo\photo12.jpg / width=250px>
+		           <img src=photo\photo13.jpg / width=290px>
+		           <img src=photo\photo14.jpg / width=300px>
+		           <img src=photo\photo15.jpg / width=300px>
+		        </div>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<!--第三页 基本信息-->
+	<a name="c123"></a>
+	<div class="row">
+		<div class="col-md-12">
+			<div style="width: 1002px;height: 790px;margin:0 auto;">
+				<h1 class="h1">基本信息</h1>
+				<div style="margin-bottom: 60px;">
+					<img style="float: right;width: 200px;height: 300px;" src="photo\photo16.jpg">
+					<div class="text">
+						《天气之子》是由日本动画监督新海诚执导的动画电影作品，于2019年7月19日在日本上映，并于2019年11月1日在中国大陆上映
+							<sup style="color: #FF0000;">2019年日本票冠新海诚《天气之子》11月1日来中国 ．新浪</sup>。
+						这是新海诚继《你的名字。》后时隔三年的又一部动画电影，也是他的第七部及进入令和时代后的首部动画电影，更获得代表日本角逐第92届奥斯卡最佳国际影片奖的资格
+							<sup style="color: #FF0000;">新海诚动画《天气之子》将代表日本竞争奥斯卡 ．新浪娱乐</sup>。
+					</div>
+					<div class="text" style="margin-top: 50px;">
+						该片讲述的是在气候调节失控的时代，被命运捉弄的少年和少女选择各自的生活方式的故事
+							<sup style="color: #FF0000;">新海诚新作アニメ「天気の子」に醍醐虎汰朗&森七菜、キャラデザは田中将贺 ．コミックナタリー</sup>。
+					</div>
+					<hr>
+				</div>
+				
+				<div>
+					<img style="float: right;width: 200px;height: 300px;" src="photo\photo17.jpg">
+					<div style="float: left;margin: 0 auto;text-align: center;width: 700px;color: #fff;text-shadow: 1px 1px 1px #000;font-size: 16px;">
+						<div class="row">
+							<div style="color:  #303030;" class="col-md-3">中文名：</div>
+							<div class="col-md-3">天气之子</div>
+							<div style="color:  #303030;" class="col-md-3">音乐：</div>
+							<div class="col-md-3">RADWIMPS</div>
+						</div>
+						<div class="row">
+							<div style="color:  #303030;" class="col-md-3">原版名称：</div>
+							<div class="col-md-3">天気の子（てんきのこTenki no Ko) </div>
+							<div style="color:  #303030;" class="col-md-3">主要配音：</div>
+							<div class="col-md-3">醍醐虎汰朗，森七菜</div>
+						</div>
+						<div class="row">
+							<div style="color:  #303030;" class="col-md-3">其他名称：</div>
+							<div class="col-md-3">Weathering with you </div>
+							<div style="color:  #303030;" class="col-md-3">制    片：</div>
+							<div class="col-md-3">CoMix Wave Films</div>
+						</div>
+						<div class="row">
+							<div style="color:  #303030;" class="col-md-3">动画制作：</div>
+							<div class="col-md-3">Comix Wave Film </div>
+							<div style="color:  #303030;" class="col-md-3">出    品：</div>
+							<div class="col-md-3">《天气之子》制作委员会 </div>
+						</div>
+						<div class="row">
+							<div style="color:  #303030;" class="col-md-3">类    型：</div>
+							<div class="col-md-3">奇幻、爱情 </div>
+							<div style="color:  #303030;" class="col-md-3">代理发行：</div>
+							<div class="col-md-3">安乐影片（中国香港）</div>
+						</div>
+						<div class="row">
+							<div style="color:  #303030;" class="col-md-3">地    区：</div>
+							<div class="col-md-3">日本</div>
+							<div style="color:  #303030;" class="col-md-3">.col-md-1</div>
+							<div class="col-md-3">车库娱乐（中国香港）</div>
+						</div>
+						<div class="row">
+							<div style="color:  #303030;" class="col-md-3">原    作：</div>
+							<div class="col-md-3">新海诚 </div>
+							<div class="col-md-3"></div>
+							<div class="col-md-3">华夏电影（中国内地</div>
+						</div>
+						<div class="row">
+							<div style="color:  #303030;" class="col-md-3">导    演：</div>
+							<div class="col-md-3">新海诚</div>
+							<div style="color:  #303030;" class="col-md-3">日本上映时间：</div>
+							<div class="col-md-3">2019年7月19日</div>
+						</div>
+						<div class="row">
+							<div style="color:  #303030;" class="col-md-3">剧    本：</div>
+							<div class="col-md-3">新海诚</div>
+							<div style="color:  #303030;" class="col-md-3">中国香港上映：</div>
+							<div class="col-md-3">2019年8月8日</div>
+						</div>
+						<div class="row">
+							<div style="color:  #303030;" class="col-md-3">角色设计：</div>
+							<div class="col-md-3">田中将贺</div>
+							<div style="color:  #303030;" class="col-md-3">中国台湾上映：</div>
+							<div class="col-md-3">2019年9月12日</div>
+						</div>
+						<div class="row">
+							<div style="color:  #303030;" class="col-md-3">作画监督：</div>
+							<div class="col-md-3">田村笃</div>
+							<div style="color:  #303030;" class="col-md-3">中国内地上映：</div>
+							<div class="col-md-3">2019年11月1日</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<!--第四页 剧情简介与角色介绍-->
+	<a name="d123"></a>
+	<div class="row">
+		<div class="col-md-12">
+			<div style="width: 1002px;height: 790px;margin:0 auto;">
+				<div class="row">
+					<div class="col-md-12">
+						<h1 class="h1-1">
+							<div class="h1-1-1">剧情简介</div>
+							<span style="color: #FFFF00;font-size: 40px;text-align: center;">与</span>
+							<div class="h1-1-2">角色介绍</div>
+						</h1>
+						<div style="border: 2px dotted #7925CB;">
+							<p class="p1">“想尝试前往，那道光芒之中”</p>
+							<p class="p1">高中一年级的夏天，从离岛离家出走，来到东京的帆高。但是他的生活立马变得穷困，在度过孤独的每一天之后终于找到的工作，是为古怪的超自然杂志撰稿。</p>
+							<p class="p1">如同预示着他接下来的命运一般，连日不断地下雨。此时，在人潮熙熙攘攘的都市一角，帆高遇到了一位少女。</p>
+							<p class="p1">由于某些缘故，少女·阳菜和弟弟两人一起坚强生活。而她，拥有不可思议的能力。</p>
+							<p class="p1">“呐，现在开始就要放晴了哦”</p>
+							<p class="p1">雨逐渐停止，街道笼罩在美丽的光芒中。那是仅仅在心中祈祷，就能让天空放晴的力量——</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="div8">
+							<a href="二级网页\人物\森岛帆高.html" target="window1">森岛帆高</a>
+							<a href="二级网页\人物\天野凪.html" target="window1">天野凪</a>
+							<a href="二级网页\人物\须贺夏美.html" target="window1">须贺夏美</a>
+							<a href="二级网页\人物\天野阳菜.html" target="window1">天野阳菜</a>
+							<a href="二级网页\人物\须贺圭介.html" target="window1">须贺圭介</a>
+							<a href="二级网页\人物\立花富美.html" target="window1">立花富美</a>
+							<iframe style="position:absolute;top: 30px;left: 275px; " src="二级网页\人物\森岛帆高.html" width="450px" height="300px" frameborder="0" scrolling="auto" name="window1">-</iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<!--第五页 动画制作-->
+	<a name="e123"></a>
+	<div class="row">
+		<div class="col-md-12">
+			<div style="width: 1002px;height: 790px;margin:0 auto;">
+				<h1 class="h1">动画制作</h1>
+				<center>
+					<p>
+						<div class="row"> 
+							<div class="col-md-4">
+								<div class="text2">
+									<a class="a1" href="二级网页\动画制作\动画制作.html" target="window2">动画制作</a>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="text2">
+									<a class="a1" href="二级网页\动画制作\角色配音.html" target="window2">角色配音</a>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="text2">
+									<a class="a1" href="二级网页\动画制作\制作相关.html" target="window2">制作相关</a>
+								</div>
+							</div>
+						</div>
+					</p>
+				</center>
+				<iframe src="二级网页\动画制作\动画制作.html" width="1000px" height="600px" frameborder="0" scrolling="auto" name="window2">
+					-
+				</iframe>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+
+	<!--第六页 关联作品-->
+	<a name="f123"></a>
+	<div class="row">
+		<div class="col-md-12">
+			<div style="width: 1002px;height: 790px;margin:0 auto;">
+				<h1 class="h1">关联作品<sub style="color: #000;font-size: 25px;text-shadow: 1px 1px 1px #fff;">(刷新一下页面试试)</sub></h1>
+				<div style="height: 50px;width: 1002px;"></div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="bb">小说</div>
+					</div>
+					<div class="col-md-6">
+						<div class="bb">动漫</div>
+					</div>
+				</div>
+				<div class="aa" align=center>
+					<div>
+						<!--3D翻书效果-->
+						<div class="perspective">
+							<div class="book-wrap">
+								<div class="page book-content">
+									<img src=photo\小说5.jpg / width=250px / height=300px>
+								</div>
+
+								<div class="page book-content book-content1">
+									<img src=photo\小说4.jpg / width=200px / height=400px>
+								</div>
+
+								<div class="page book-content book-content2">
+									<img src=photo\小说3.jpg / width=200px>
+								</div>
+
+								<div class="page book-content book-content3">
+									<img src=photo\小说2.jpg / width=250px>
+								</div>
+
+								<div class="page book-cover">
+									<img src=photo\小说1.jpg / width=250px>
+								</div>
+							</div>
+						</div>
+
+						<span style="font-family: 宋体;font-size: 20px;width:300px;position: absolute;left: -100px;top:330px;">
+							《天气之子》是由新海诚根据同名动画电影改编的小说,于2019年7月18日发售。
+						</span>
+					</div>
+					<div>
+						<img src=photo\漫画.jpg / width=270px><br>
+						<span style="font-family: 宋体;">漫画版《天气之子》由洼田航作画，于《月刊afternoon》2019年9月号开始连载。
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<!--第七页 新海诚-->
+	<a name="g123"></a>
+	<div class="row">
+		<div class="col-md-12">
+			<div style="width: 1002px;height: 525px;margin:0 auto;">
+				<h1 class="h1">新海诚</h1>
+				<div class="div1">
+					<a href="https://baike.baidu.com/item/新海诚/2722278?fr=aladdin">
+						<img src="photo\新海诚.jpg">
+					<div class="div2">不用想了，作者真的很懒，新海诚的简介全用“x”表示了，读者们还是点击图片去问度娘吧！</div>
+					</a>
+				</div>
+				<div style="float: left;margin: 0 50px;width: 400px;height: auto;">
+					<div class="div3">xxx,xx,xxx,xxx,xxxxxxx,xxxxxxx,xxxxxxxxxxxxx,xxxxxxxxxxxx;xxxxxxxxxxxxx,xxxxxxxxxxx。xxxxxxxxxxxxxxxxxxxx,xxxxxxxxxxxxxxxx,xxxxxxxxxxxxxx。</div>
+					<div class="div3">xxx,xx,xxx,xxx,xxxxxxx,xxxxxxx,xxxxxxxxxxxxx,xxxxxxxxxxxx;xxxxxxxxxxxxx,xxxxxxxxxxx。xxxxxxxxxxxxxxxxxxxx,xxxxxxxxxxxxxxxx,xxxxxxxxxxxxxx。xxx,xx,xxx,xxx,xxxxxxx,xxxxxxx,xxxxxxxxxxxxx,xxxxxxxxxxxx;xxxxxxxxxxxxx,xxxxxxxxxxx。xxxxxxxxxxxxxxxxxxxx,xxxxxxxxxxxxxxxx,xxxxxxxxxxxxxx。</div>
+					<div class="div3">xxx,xx,xxx,xxx,xxxxxxx,xxxxxxx,xxxxxxxxxxxxx,xxxxxxxxxxxx;xxxxxxxxxxxxx,xxxxxxxxxxx。xxxxxxxxxxxxxxxxxxxx,xxxxxxxxxxxxxxxx,xxxxxxxxxxxxxx。xxx,xx,xxx,xxx,xxxxxxx,xxxxxxx,xxxxxxxxxxxxx,xxxxxxxxxxxx;xxxxxxxxxxxxx,xxxxxxxxxxx。xxxxxxxxxxxxxxxxxxxx,xxxxxxxxxxxxxxxx,xxxxxxxxxxxxxx。xxx,xx,xxx,xxx,xxxxxxx,xxxxxxx,xxxxxxxxxxxxx,xxxxxxxxxxxx;xxxxxxxxxxxxx,xxxxxxxxxxx。xxxxxxxxxxxxxxxxxxxx,xxxxxxxxxxxxxxxx,xxxxxxxxxxxxxx。</div>
+					<div class="div3">xxx,xx,xxx,xxx,xxxxxxx,xxxxxxx,xxxxxxxxxxxxx,xxxxxxxxxxxx;xxxxxxxxxxxxx,xxxxxxxxxxx。xxxxxxxxxxxxxxxxxxxx,xxxxxxxxxxxxxxxx,xxxxxxxxxxxxxx。</div>
+					<div class="div3">xxx,xx,xxx,xxx,xxxxxxx,xxxxxxx,xxxxxxxxxxxxx,xxxxxxxxxxxx;xxxxxxxxxxxxx,xxxxxxxxxxx。xxxxxxxxxxxxxxxxxxxx,xxxxxxxxxxxxxxxx,xxxxxxxxxxxxxx。xxx,xx,xxx,xxx,xxxxxxx,xxxxxxx,xxxxxxxxxxxxx,xxxxxxxxxxxx;xxxxxxxxxxxxx,xxxxxxxxxxx。xxxxxxxxxxxxxxxxxxxx,xxxxxxxxxxxxxxxx。</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-md-12">
+			<div>
+				<div class="div4">
+					<div class="div5">
+						<div class="div6">天<br>气<br>之<br>子</div>
+						<div class="div7">
+							<div class="row">
+								<div class="col-md-3">
+									<div>
+										<a class="a2" href="#a123">首页</a>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div>
+										<a class="a2" href="#b123">精彩图集</a>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div>
+										<a class="a2" href="#c123">基本信息</a>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div>
+										<a class="a2" href="#d123">剧情简介</a>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<div>
+										<a class="a2" href="#d123">角色介绍</a>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div>
+										<a class="a2" href="#e123">动画制作</a>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div>
+										<a class="a2" href="#f123">关联作品</a>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div>
+										<a class="a2" href="#g123">新海诚</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
